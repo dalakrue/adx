@@ -1,11 +1,21 @@
-"""Preferred Streamlit entry point for the future-proof app shell.
+"""Preferred Streamlit entry point.
 
-Run with:
+Streamlit Cloud main file path:
+    app.py
+
+Local run:
     streamlit run app.py
-
-The historical entry point adx_dashpoard.py is kept for backward compatibility.
-Both launch the same app shell.
 """
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+# Make absolute project imports reliable even when Streamlit starts from a
+# parent working directory or a cloud runner changes the current directory.
+_PROJECT_ROOT = Path(__file__).resolve().parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
 
 from adx_dashpoard import main
 

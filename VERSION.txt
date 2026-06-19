@@ -1,0 +1,9 @@
+Version: new7-eurusd-h1-canonical-trust-history-final-2026-06-19
+Build Date: 2026-06-19
+Base ZIP: 28b67659-79d0-4eb4-b1cc-bb48744c3b08.zip uploaded by user
+Base ZIP SHA-256: 9a769f943a2d11ebbba30548bb9bfa8c81ca7d71bfefb2fed82f78461f5deb1a
+Scope: immutable settled-forecast ledger, calibrated trust validation, hard/soft WAIT separation, one canonical Lunch renderer, cached Power BI path visibility, progressive Full Metric History disclosure, UTC-safe settlement, database indexes, mobile-safe display and cross-tab calculation identity.
+Core protection: core/full_metric_canonical_adapter_20260618.py is byte-for-byte unchanged from the uploaded ZIP (SHA-256 b596a04ff0a1265bf1b64c95e665597e3b0eccc9a22c5b75b7be50fde82e506b).
+Main entry point: main.py
+Launch command: streamlit run main.py
+Validation: python -m compileall . PASS; 179/179 pytest PASS across grouped test runs; Streamlit health PASS; Streamlit AppTest main and new Lunch UI smoke PASS.

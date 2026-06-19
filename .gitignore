@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.sqlite3-wal
+*.sqlite3-shm
+*.log
+# Recreated runtime cache; canonical user history remains in data/quant_app.sqlite3.
+data/adx_runtime_store.sqlite3

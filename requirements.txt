@@ -1,0 +1,10 @@
+# Normal deployed application requirements (Python 3.12 / Streamlit Cloud).
+-r requirements-core.txt
+-r requirements-analytics.txt
+-r requirements-nlp.txt
+-r requirements-ui.txt
+
+# Optional heavy research packages are intentionally excluded from normal startup.
+# Install them only when needed:
+#   pip install -r requirements-optional-heavy.txt
+# MetaTrader5 remains local Windows-only: pip install MetaTrader5
